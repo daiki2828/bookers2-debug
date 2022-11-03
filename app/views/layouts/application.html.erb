@@ -10,10 +10,18 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-      <main>
-        <p id="notice"><%= notice %></p>
-        <%= yield %>
-      </main>
+    <div class='container px-5 px-sm-0 mt-2'>
+      <div class='row'>
+        <div class='col-md-3'> </div>
+        <div class='col-md-8 offset-md-1'>
+          <%= render 'searchs/form' %>
+        </div>
+      </div>
+    </div>
+    <main>
+      <p id="notice"><%= notice %></p>
+      <%= yield %>
+    </main>
     <%= render 'layouts/footer' %>
   </body>
 </html>
